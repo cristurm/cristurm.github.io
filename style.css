@@ -1,0 +1,61 @@
+html, body {
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  background: #222 url('noise.png') repeat 0 0;
+  font-family: "Nova Mono", monospace;
+  border: 10px solid #2FDBED;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #2FDBED;
+  font-size: 1.2em;
+  animation: noisy 1.5s steps(5) infinite both;
+}
+
+h1 {
+  background: #2FDBED;
+  color: #222;
+  height: 40px;
+  line-height: 40px;
+  align-self: stretch;
+}
+
+.tagline {
+  vertical-align: baseline;
+  line-height: 2em;
+}
+
+.super-highlight {
+  border-bottom: 2px solid #2FDBED;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+@keyframes noisy {
+  0% {
+    background-position: 0 0;
+  }
+
+  25% {
+    background-position: 150px 75px;
+  }
+
+  50% {
+    background-position: 85px -10px;
+  }
+
+  75% {
+    background-position: 10px 100px;
+  }
+
+  100% {
+    background-position: -45px -20px;
+  }
+}
