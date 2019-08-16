@@ -22,20 +22,18 @@ body {
 h1 {
   background: #2FDBED;
   color: #222;
-  height: 40px;
-  line-height: 40px;
   align-self: stretch;
-}
-
-.tagline {
-  vertical-align: baseline;
-  line-height: 2em;
+  letter-spacing: -0.1em;
 }
 
 .super-highlight {
-  border-bottom: 2px solid #2FDBED;
   font-weight: bold;
   font-size: 1.5em;
+}
+
+.tagline {
+  line-height: 2em;
+  text-shadow: 1px 2px 1px #000
 }
 
 @keyframes noisy {
